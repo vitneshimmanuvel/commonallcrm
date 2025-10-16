@@ -14,6 +14,7 @@ import Analytics from "./pages/Analytics";
 import Services from "./pages/Services";
 import NotFound from "./pages/NotFound";
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="calendar" element={<Calendar />} />
               <Route path="analytics" element={<Analytics />} />
               <Route path="services" element={<Services />} />
+              <Route path="settings" element={<Settings />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
@@ -42,3 +44,7 @@ const App = () => (
 );
 
 export default App;
+
+function Settings() {
+  return <div className="p-4">Coming soon</div>;
+}

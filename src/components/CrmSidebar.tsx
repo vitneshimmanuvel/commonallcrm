@@ -104,7 +104,7 @@ export function CrmSidebar() {
           </div>
           {!isCollapsed && (
             <div>
-              <h2 className="font-bold text-lg text-sidebar-foreground">CRM Pro</h2>
+              <h2 className="font-bold text-lg text-sidebar-foreground">Settlo CRM Pro</h2>
               <p className="text-xs text-sidebar-foreground/60">Business Management</p>
             </div>
           )}
