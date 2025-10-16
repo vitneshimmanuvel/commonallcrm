@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CRM Design System - Professional Blue-Purple Theme */
+
+@layer base {
+  :root {
+    --background: 248 50% 98%;
+    --foreground: 234 12% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 234 12% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 234 12% 20%;
+
+    --primary: 243 75% 58%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 243 75% 52%;
+
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 234 12% 20%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 234 6% 50%;
+
+    --accent: 270 60% 65%;
+    --accent-foreground: 0 0% 98%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 243 75% 58%;
+
+    --radius: 0.75rem;
+
+    /* CRM Specific Colors */
+    --dashboard-bg: 248 50% 96%;
+    --metric-card: 0 0% 100%;
+    --revenue-green: 142 76% 36%;
+    --lead-blue: 217 91% 60%;
+    --client-purple: 270 60% 65%;
+    --invoice-orange: 25 95% 53%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(243 75% 58%), hsl(270 60% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(158 64% 52%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(248 50% 98%));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(234 12% 20% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(234 12% 20% / 0.1), 0 2px 4px -1px hsl(234 12% 20% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(234 12% 20% / 0.1), 0 4px 6px -2px hsl(234 12% 20% / 0.05);
+    --shadow-primary: 0 10px 25px -5px hsl(243 75% 58% / 0.25);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 234 20% 8%;
+    --foreground: 240 5% 96%;
+
+    --card: 234 20% 10%;
+    --card-foreground: 240 5% 96%;
+
+    --popover: 234 20% 10%;
+    --popover-foreground: 240 5% 96%;
+
+    --primary: 243 75% 65%;
+    --primary-foreground: 234 20% 8%;
+    --primary-hover: 243 75% 70%;
+
+    --secondary: 234 12% 15%;
+    --secondary-foreground: 240 5% 96%;
+
+    --muted: 234 12% 15%;
+    --muted-foreground: 240 4% 60%;
+
+    --accent: 270 60% 70%;
+    --accent-foreground: 234 20% 8%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 234 20% 8%;
+
+    --warning: 38 92% 60%;
+    --warning-foreground: 234 20% 8%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 234 20% 8%;
+
+    --border: 234 12% 20%;
+    --input: 234 12% 20%;
+    --ring: 243 75% 65%;
+
+    /* Dark theme CRM colors */
+    --dashboard-bg: 234 20% 6%;
+    --metric-card: 234 20% 10%;
+    --revenue-green: 142 76% 45%;
+    --lead-blue: 217 91% 70%;
+    --client-purple: 270 60% 70%;
+    --invoice-orange: 25 95% 63%;
+
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(243 75% 65%), hsl(270 60% 70%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 45%), hsl(158 64% 60%));
+    --gradient-card: linear-gradient(135deg, hsl(234 20% 10%), hsl(234 20% 8%));
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -1px hsl(0 0% 0% / 0.2);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -2px hsl(0 0% 0% / 0.3);
+    --shadow-primary: 0 10px 25px -5px hsl(243 75% 65% / 0.4);
+
+    --sidebar-background: 234 20% 6%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 243 75% 65%;
+    --sidebar-primary-foreground: 234 20% 8%;
+    --sidebar-accent: 234 12% 12%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 234 12% 20%;
+    --sidebar-ring: 243 75% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
